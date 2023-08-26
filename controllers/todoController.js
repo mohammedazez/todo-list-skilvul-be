@@ -67,10 +67,39 @@ export const apiController = {
           },
         }
       );
-      res.status(201).json({
+      res.status(200).json({
         status: true,
-        code: 201,
+        code: 200,
         message: "success update todo",
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ status: false, code: 500, message: error });
+    }
+  },
+
+  deleteTodo: async (req, res) => {
+    const getTodo = await Todos.findOne({
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    if (!getTodo) {
+      return res
+        .status(404)
+        .json({ status: false, code: 404, message: "data not found" });
+    }
+    try {
+      await Todos.destroy({
+        where: {
+          id: req.params.id,
+        },
+      });
+      res.status(200).json({
+        status: true,
+        code: 200,
+        message: "success delete todo",
       });
     } catch (error) {
       console.log(error);
