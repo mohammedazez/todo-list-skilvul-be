@@ -10,5 +10,6 @@ router.use(function (req, res, next) {
   next();
 });
 router.post("/todo", apiController.createTodo);
+router.get("/todo", apiController.getTodo);
 
 export default router;
