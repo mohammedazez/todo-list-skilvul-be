@@ -14,7 +14,7 @@
   }
   ```
 
-      _Path Example_
+  _Path Example_
 
   ```
   POST https://todo-skilvul.herokuapp.com/api/v1/todo
@@ -121,7 +121,6 @@
   }
   ```
 
-  Also this rest api can search by pokemon name, example
 
   ```jso
   GET https://todo-skilvul.herokuapp.com/api/v1/todo?status=1
