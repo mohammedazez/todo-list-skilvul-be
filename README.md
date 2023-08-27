@@ -1,7 +1,9 @@
 ### Pokemon-API Docs
 
 - `POST /api/v1/todo	`
-  REST API to create todo list
+
+  REST API to show list of todo
+
 
   > Create Todo List
 
@@ -14,7 +16,7 @@
   }
   ```
 
-      _Path Example_
+  _Path Example_
 
   ```
   POST https://todo-skilvul.herokuapp.com/api/v1/todo
@@ -121,7 +123,6 @@
   }
   ```
 
-  Also this rest api can search by pokemon name, example
 
   ```jso
   GET https://todo-skilvul.herokuapp.com/api/v1/todo?status=1
@@ -139,7 +140,9 @@
 ---
 
 - `PUT /api/v1/todo/:id`
-  REST API to update todo
+
+  REST API to show list of todo
+
 
   > Update Todo
 
@@ -191,7 +194,8 @@
   ***
 
 - `DELETE /api/v1/todo/:id`
-  REST API to delete todo
+
+  REST API to show list of todo
 
   > Delete Todo
 
