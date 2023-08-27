@@ -1,7 +1,9 @@
 ### Pokemon-API Docs
 
 - `POST /api/v1/todo	`
-  REST API to create todo list
+
+  REST API to show list of todo
+
 
   > Create Todo List
 
@@ -138,7 +140,9 @@
 ---
 
 - `PUT /api/v1/todo/:id`
-  REST API to update todo
+
+  REST API to show list of todo
+
 
   > Update Todo
 
@@ -190,7 +194,8 @@
   ***
 
 - `DELETE /api/v1/todo/:id`
-  REST API to delete todo
+
+  REST API to show list of todo
 
   > Delete Todo
 
