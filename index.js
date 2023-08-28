@@ -17,6 +17,6 @@ app.use(cookieParser());
 app.use(express.static("public"));
 app.use("/", routes);
 
-app.listen(port, () => {
-  console.log(`app listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`app listening on port ${PORT}`);
 });
