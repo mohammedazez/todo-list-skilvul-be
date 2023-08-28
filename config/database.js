@@ -1,8 +1,24 @@
 import Sequelize from "sequelize";
+import dotenv from "dotenv";
 
-const db = new Sequelize("aziz_database", "aziz_db", "admin123@", {
-  host: "rm-d9joak34kay01t4268o.mysql.ap-southeast-5.rds.aliyuncs.com",
-  dialect: "mysql",
-});
+dotenv.config();
+
+const {
+  DB_NAME_SKILVUL,
+  DB_USER_SKILVUL,
+  DB_PASSWORD_SKILVUL,
+  DB_HOST_SKILVUL,
+  DB_DIALECT,
+} = process.env;
+
+const db = new Sequelize(
+  DB_NAME_SKILVUL,
+  DB_USER_SKILVUL,
+  DB_PASSWORD_SKILVUL,
+  {
+    host: DB_HOST_SKILVUL,
+    dialect: DB_DIALECT,
+  }
+);
 
 export default db;
