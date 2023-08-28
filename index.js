@@ -5,7 +5,7 @@ import routes from "./routes/index.js";
 import cookieParser from "cookie-parser";
 
 const app = express();
-const port = 8080;
+const PORT = 8080;
 
 dotenv.config();
 
