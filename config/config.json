@@ -1,9 +1,0 @@
-{
-    "development": {
-        "username": "root",
-        "password": "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",
-        "database": "todo-list-skilvul",
-        "host": "localhost",
-        "dialect": "mysql"
-    }
-}
